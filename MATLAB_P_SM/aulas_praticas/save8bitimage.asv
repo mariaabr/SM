@@ -1,0 +1,12 @@
+function save8bitimage(filename, image)
+
+[N,M] = size(image)
+
+save_filename = 'parede.rle';
+fid = fopen(save_filename,'w');
+fwrite(fid,N,'uint16');
+fwrite(fid,M,'uint16');
+fwrite(fid,255*map,'uint8');
+fwrite(fid,img_rle,'uint8');
+fclose(fid);
+end

@@ -1,0 +1,1 @@
+% T= 1/f -> periodo de um sinal
